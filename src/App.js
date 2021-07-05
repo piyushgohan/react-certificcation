@@ -5,13 +5,11 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Topbar from './components/Topbar';
 import Home from './components/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import About from './components/About';
 import { connect } from 'react-redux'
 import AddMedicine from './components/Admin/addMedicine';
 import ViewInventory from './components/Admin/viewInventory';
 import ViewTeam from './components/Admin/viewTeam';
 import SalesExecutive from './components/Admin/addSalesExecutive';
-// import { salesLogin } from './actions';
 import ViewOrders from './components/SalesExecutive/viewOrders';
 import CreateExecutiveOrder from "./components/SalesExecutive/createOrder"
 import ShowAllOrders from './components/Admin/showAllOrders';
@@ -21,15 +19,12 @@ import CreateAdminOrder from "./components/Admin/createOrder"
 function App({ adminLogin, loginStatus, salesLogin }) {
   return (
     <div>
-
       <Router>
         <Topbar />
         {console.log(adminLogin, loginStatus)}
         <Switch>
           <Route path="/" exact><Home /></Route>
           <Route path="/login" exact><Home /></Route>
-          <Route path="/about" exact><About /> </Route>
-          {/* {adminLogin && loginStatus && <Route path="/admin"><Admin /> </Route>} */}
           {adminLogin && loginStatus && <Route path="/" exact><AddMedicine /> </Route>}
           {adminLogin && loginStatus && <Route path="/admin/add_medicine"><AddMedicine /> </Route>}
           {adminLogin && loginStatus && <Route path="/admin/view_inventory"><ViewInventory /> </Route>}

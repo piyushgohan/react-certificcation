@@ -12,8 +12,6 @@ const Topbar = ({ loginStatus, logOutAdmin }) => {
     return (<div className="topbar">
         <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe85XE6SrncVWlO_SYZ0mD6TV4c07-4qKMjsJ_DURer7chX7MxMKlRoYDA3RBqHApI1Eg&usqp=CAU" alt="pharmacy-management-software" /></div>
         <div className="topbar-menu">
-            <p>Home</p>
-            <p>Contact</p>
             {loginStatus && <p onClick={() => {
                 localStorage.setItem('loginStatus', false)
                 localStorage.setItem('adminLogin', false)
