@@ -48,7 +48,7 @@ const Login = ({ adminSignedIn, salesSignedIn }) => {
     return (<div className="login-body">
         <form className="login-form" onSubmit={handleLogin
         }>
-            <h1>Login</h1>
+            <h3>Store Login</h3>
             <div className="btn-group">
                 <p className={isAdmin ? "button active_button" : "button"} onClick={() => setIsAdmin(true)}>Admin</p>
                 <p className={!isAdmin ? "button active_button" : "button"} onClick={() => setIsAdmin(false)}>Executive</p>

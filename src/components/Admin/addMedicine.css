@@ -5,17 +5,18 @@
     margin: 40px auto;
     margin-left: 35%;
     padding: 20px;
-    box-shadow: 0px 0px 4px 4px lightblue;
+    box-shadow: 0px 0px 4px 4px blue;
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    background-color:lightblue;
 }
 
 .form-group {
     margin: 20px 12px;
-    width: 250px
+    width: 250px;
 }
 
 .form-group:nth-child(n+3) {

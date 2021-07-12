@@ -3,8 +3,9 @@
     margin: 40px;
     margin-left: auto;
     margin-right: 70px;
-    box-shadow: 0 0 4px 4px rgb(168, 161, 161);
-    padding: 20px
+    box-shadow: 0 0 4px 4px blue;
+    padding: 20px;
+    background-color:lightblue;
 }
 
 .my-order-user-details {
@@ -15,13 +16,13 @@
 }
 
 .my-order-user-details p {
-    font-size: 20px;
+    font-size: 18px;
     margin: 15px 10px;
     font-weight: bold;
 }
 
 .my-order-user-details p span {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
 }
 

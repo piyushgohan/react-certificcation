@@ -16,7 +16,7 @@ const CreateAdminOrder = ({ create_order, add_to_cart, cartItem, empty_cart }) =
 
 
     const handleFormSubmit = (e) => {
-        const orderDetails = { customerName: customerName, contactNumber: contactNumber, cartItem: cartItem, orderId: Math.floor((Math.random() * 100000000) + 1) }
+        const orderDetails = { customerName: customerName, contactNumber: contactNumber, cartItem: cartItem, orderId: Math.floor((Math.random() * 1000) + 1) }
 
         e.preventDefault();
         e.target[0].value = ''
@@ -47,12 +47,12 @@ const CreateAdminOrder = ({ create_order, add_to_cart, cartItem, empty_cart }) =
 
     return (<div>
         <Admin />
-        <h1 style={{ margin: "20px", textAlign: "center", marginLeft: "14%" }}>Make an Order</h1>
+        <h1 style={{ margin: "40px", textAlign: "center", marginLeft: "15%" }}>Make an Order</h1>
         <div style={{ display: "flex", justifyContent: "center" }}>
             <div className="add_to_cart">
                 <label type="text" onChange={(e) => setAddToCartName(e.target.value)}>Medicine <input /></label>
                 <label type="Number" onChange={(e) => setAddToCartQty(e.target.value)}>Quantity <input /></label>
-                <p>Price per unit {20}</p>
+                <p>Price per unit is *{10}</p>
                 <button className="btn btn-secondary" onClick={handleAddToCart}>Add to Cart</button>
             </div>
             <form className="create_order_form" onSubmit={handleFormSubmit}>

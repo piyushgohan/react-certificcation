@@ -1,18 +1,17 @@
 .login-form {
     width: 400px;
     margin: 0px auto !important;
-    background-color: white;
+    background-color: lightblue;
     align-items: center;
     padding: 30px !important;
     height: 60vh;
     vertical-align: middle;
-    border-radius: 20px;
     text-align: left;
 }
 
 .login-body {
     height: 100vh;
-    background-color: #a5d0f8;
+    background-color: black;
     padding-top: 100px;
 
 }
@@ -22,8 +21,8 @@
 
 }
 
-.login-form h1 {
-    margin: 0 37% !important
+.login-form h3 {
+    margin: 0 25% !important
 }
 
 .btn-group {
@@ -37,7 +36,7 @@
 
 .button {
     width: 170px;
-    border: 1px solid green;
+    border: 2px solid blue;
     padding: 5px 12px;
     text-align: center;
     text-decoration: none;
@@ -49,7 +48,7 @@
 }
 
 .active_button {
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
 }
 

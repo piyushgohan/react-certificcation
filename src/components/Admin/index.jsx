@@ -14,8 +14,8 @@ const Admin = () => {
             <Link to="/admin/add_sales_executive" className="admin_button">Add Sales Executive</Link>
             <Link to="/admin/view_team" className="admin_button" >View Team</Link>
             <h2 className="order_menu">ORDERS</h2>
-            <Link to="/admin/show_all_orders" className="admin_button" >Show All Orders</Link>
             <Link to="/admin/create_orders" className="admin_button" >Create Order</Link>
+            <Link to="/admin/show_all_orders" className="admin_button" >Show All Orders</Link>
         </div>
     </div >);
 }

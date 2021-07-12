@@ -11,14 +11,15 @@
     left: 0;
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(210, 210, 210);
+    background-color: white;
+    padding-left:20px;
 }
 
 
 .sales_executive_button {
-    font-size: 20px;
+    font-size: 22px;
     padding: 5px 10px;
-    border: 1px solid #1c8ef8;
+    border: 1px solid blue;
     border-radius: 5px;
     margin: 15px 10px;
     cursor: pointer;
@@ -26,7 +27,8 @@
 
 .sales_executive_button:hover {
     text-decoration: none;
-    color: black
+    color: black;
+    background-color:lightgreen;
 }
 
 /* Active Button */
